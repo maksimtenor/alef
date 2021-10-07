@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body, html{
+    color: #1d1d1d;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    height: 100%;
+}
+/* WRAPPER and CONTAINER  -----------------------------------------------*/
+.wrapper {}
+.container {
+    width: 1181px;
+    margin: 0 auto;
+}
+.header-top__menu-img {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+/* HEADER -------------------------------------------------*/
+.header {
+    color: #fff;
+    width: 100%;
+    height: 252px;
+    background: linear-gradient(to right, rgba(31, 32, 33, 0.79), rgba(31, 32, 33, 0.79)),url(../img/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__main {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 40px 0;
+}
+.header__main__nav {
+    position: absolute;
+    text-align: left;
+    left: 17%;
+}
+.header__main__nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    display: inline-block;
+    margin-right: 60px;
+}
+.header__main__nav-link:last-child {
+    margin-right: 0;
+}
+.header__main__nav-link:hover {
+    color: rgba(110, 187, 211, 1);
+    transition: 0.5s;
+}
+.header__main__contact{
+    text-align: right;
+}
+.header__main__contact-tell{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 29px;
+}
+.header__main__contact-text{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+}
+.header__counter-block {
+    text-align: left;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+}
+/* MAIN ---------------------------------------------------*/
+/* FOOTER -------------------------------------------------*/

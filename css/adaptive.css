@@ -1,0 +1,103 @@
+/* IPAD 768px */
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+    /* WRAPPER and CONTAINER */
+        .container {
+            width: unset;
+            margin: 0 30px;
+        }
+    /* HEADER */
+    /* MAIN */
+    /* FOOTER */
+}
+@media screen and (min-width: 768px) and (max-width: 860px){
+    .container {
+        width: unset;
+        margin: 0 30px;
+    }
+    .header__main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 40px 0;
+    }
+    .header__main__nav {
+        position: inherit;
+        left: unset;
+    }
+    .header__main__logo{
+        margin: 0 0 20px 0;
+    }
+    .header__main__contact {
+        position: absolute;
+        right: 5%;
+        top: 95%;
+    }
+}
+/* IPHONE 375px */
+@media screen and (min-width: 375px) and (max-width: 768px){
+    /* WRAPPER and CONTAINER */
+    .container {
+        width: unset;
+        margin: 0 10px;
+    }
+    /* HEADER */
+    .header {
+        position: relative;
+        height: 200px;
+    }
+    .header__main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 40px 0 0 0;
+    }
+    .header__main__nav {
+        display: none;
+        position: absolute;
+        left: unset;
+        text-align: center;
+        width: 100%;
+        top: 208%;
+        background-color: rgba(31, 32, 33, 0.79);
+    }
+    .header__main__nav-link {
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 22px;
+        display: inline-block;
+        margin-right: unset;
+        padding: 10px 0 10px 0;
+    }
+    .header-top__menu-img {
+        display: unset;
+        width: 40px;
+        height: 45px;
+    }
+    .header__main__logo{
+        margin: unset;
+    }
+    .header__main__contact {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 120%;
+    }
+    .header__cats-value{
+        position: absolute;
+        top: 75%;
+        font-size: 16px;
+    }
+    /* MAIN */
+    /* FOOTER */
+}
