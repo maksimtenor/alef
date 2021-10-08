@@ -1,14 +1,34 @@
 // SHOW AND HIDDEN MENU
-$(".header-top__menu-img").click(function() {
+$(function(){
+  $(".header-top__menu-img").click(function() {
     $('.header__main__nav').toggle(300);
   });
+});
+// Скрывает блок меню при клике вне зоны меню и header блока
+// Работает только при разрешении экрана менее 768px
+function obnovitStranicu() { 
   $(document).on('click', function(e) {
     if (!$(e.target).closest(".header__main").length) {
-      $('.header__main__logo').hide();
+      $('.header__main__nav').hide();
     }
     e.stopPropagation();
   });
+}
+  if (  $(window).width() < 768  ) {
+    obnovitStranicu();
+  }
+// Управление стрелками сортировки цены
+  $(function(){
+    $('.refine-bar__sort-price-block').click(function () {
+      $('.toggle-up').toggleClass('refine-bar__sort--arrow-down');
+      $('.toggle-up').toggleClass('refine-bar__sort--arrow-up');
+    });
 
+    $('.refine-bar__sort-old-block').click(function () {
+      $('.toggle-down').toggleClass('refine-bar__sort--arrow-up');
+      $('.toggle-down').toggleClass('refine-bar__sort--arrow-down');
+    });
+  });
 
   // function onEntry(entry) {
 //     entry.forEach(change => {

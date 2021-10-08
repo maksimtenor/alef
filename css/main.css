@@ -24,6 +24,9 @@ body, html{
     position: absolute;
     right: 40px;
     top: 40px;
+    display: none;
+    width: 40px;
+    height: 45px;
 }
 /* HEADER -------------------------------------------------*/
 .header {
@@ -89,4 +92,56 @@ body, html{
     line-height: 46px;
 }
 /* MAIN ---------------------------------------------------*/
+.main__sort-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding: 37px 0 38px 0;
+}
+.refine-bar__sort-price-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin: 0 48px;
+    cursor: pointer;
+}
+.refine-bar__sort-old-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    cursor: pointer;
+}
+.main__sort-nav-heading{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.refine-bar__sort--price,
+.refine-bar__sort--old {
+    margin-right: 15px;
+}
+.refine-bar__sort--arrow-down::after{
+    display: inline-block;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 16px;
+}
+.refine-bar__sort--arrow-up::after{
+    display: inline-block;
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 16px;
+}
 /* FOOTER -------------------------------------------------*/
