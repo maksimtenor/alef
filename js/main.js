@@ -1,11 +1,10 @@
-// SHOW AND HIDDEN MENU
+// ПОКАЗАТЬ ИЛИ СКРЫТЬ МЕНЮ
 $(function(){
   $(".header-top__menu-img").click(function() {
     $('.header__main__nav').toggle(300);
   });
 });
-// Скрывает блок меню при клике вне зоны меню и header блока
-// Работает только при разрешении экрана менее 768px
+// СКРЫВАЕТ БЛОК ПРИ КЛИКЕ ВНЕ ЗОНЫ МЕНЮ ИЛИ БЛОКА header
 function obnovitStranicu() { 
   $(document).on('click', function(e) {
     if (!$(e.target).closest(".header__main").length) {
@@ -14,10 +13,11 @@ function obnovitStranicu() {
     e.stopPropagation();
   });
 }
+// РАБОТАЕТ ТОЛЬКО ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768px
   if (  $(window).width() < 768  ) {
     obnovitStranicu();
   }
-// Управление стрелками сортировки цены
+// УПРАВЛЕНИЕ СТРЕЛКАМИ СОРТИРОВКИ ЦЕНЫ
   $(function(){
     $('.refine-bar__sort-price-block').click(function () {
       $('.toggle-up').toggleClass('refine-bar__sort--arrow-down');
@@ -29,45 +29,41 @@ function obnovitStranicu() {
       $('.toggle-down').toggleClass('refine-bar__sort--arrow-down');
     });
   });
-
-
-  // function onEntry(entry) {
-//     entry.forEach(change => {
-//       if (change.isIntersecting) {
-//        change.target.classList.add('element-show');
-//       }
-//     });
-//   }
+  // ДОБАВЛЕНИЕ АКЦИЙ -40%
+  $(function(){
+    $('.discount').addClass('main__product-card-item__img-block--discount');
+  })
   
-//   let options = {
-//     threshold: [0.5] };
-//   let observer = new IntersectionObserver(onEntry, options);
-//   let elements = document.querySelectorAll('.element-animation');
-  
-//   for (let elm of elements) {
-//     observer.observe(elm);
-//   }
-
-document.addEventListener('DOMContentLoaded', function () {
-    // инициализация слайдера
-    var slider = new SimpleAdaptiveSlider('.slider', {
-      autoplay: true,
-      interval: 10000,
-    });
+  // Когда пользователь прокручивает вниз 20 пикселей от верха документа, покажите кнопку
+  $(function(){
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("myBtn").style.display = "flex";
+            document.getElementById("myBtn").style.justifyContent = "center";
+            document.getElementById("myBtn").style.alignItems = "center";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
   });
-  
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
-      } else {
-          document.getElementById("myBtn").style.display = "none";
-      }
-  }
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-  
+      // Когда пользователь нажимает кнопку, прокручивает документ до верхней части.
+      $(document).on("click", "#myBtn", function(e) {
+        e.preventDefault();
+        $('body, html').animate({scrollTop: 0}, 800);
+    });
+
+
+    $(document).on("click", ".header__main__nav a", function(e) {
+      e.preventDefault();
+      var id  = $(this).attr('href');
+      var top = $(id).offset().top; // получаем координаты блока
+      $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
+  });
+
+
+
+  // ПРОВЕРКА СКОЛЬКО ПРОСКРОЛИЛ ПОЛЬЗОВАТЕЛЬ
+  //   window.onscroll = function (e) {
+  //     console.log(window.scrollY);
+  // }

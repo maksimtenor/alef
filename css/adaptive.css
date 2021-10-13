@@ -7,12 +7,94 @@
         }
     /* HEADER */
     /* MAIN */
+    .main__product-card-item:hover {
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        cursor: pointer;
+        box-shadow: unset;
+    }
     /* FOOTER */
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1055px){
+    .footer {
+        height: 600px;
+    }
+    .footer__form span {
+        color: #ffff;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+    .footer__form span input {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .footer__main-block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .footer__left-block {
+        text-align: center;
+        margin: 50px 0 25px 0;
+    }
+    .footer__form_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__form_block input {
+        margin-bottom: 25px;
+    }
+    .footer__form_block a {
+        margin-left: unset;
+    }
+    .footer__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        flex: 2 50%;
+        align-items: center;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 860px){
     .container {
         width: unset;
         margin: 0 30px;
+    }
+    .footer__form span {
+        color: #ffff;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+    .footer__form span input {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
     }
     .header__main {
         display: flex;
@@ -48,21 +130,60 @@
         width: 100%;
         height: 521px;
         display: flex;
-        flex-direction: row;
         align-content: center;
         justify-content: center;
         align-items: center;
         margin-bottom: 27px;
-        flex: 2 50%;
+        flex: 1 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    
+    /* FOOTER ----- */
+    .footer {
+        height: 600px;
+    }
+    .footer__main-block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .footer__left-block {
+        text-align: center;
+        margin: 50px 0 25px 0;
+    }
+    .footer__form_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__form_block input {
+        margin-bottom: 25px;
+    }
+    .footer__form_block a {
+        margin-left: unset;
+    }
+    .footer__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        flex: 2 50%;
+        align-items: center;
+    }
 }
 /* IPHONE 375px */
 @media screen and (min-width: 320px) and (max-width: 768px){
     /* WRAPPER and CONTAINER */
     .container {
         width: unset;
-        margin: 0 10px;
+        margin: 0 15px;
     }
     /* HEADER */
     .header {
@@ -87,7 +208,9 @@
         width: 100%;
         overflow: hidden;
         top: 208%;
-        background: linear-gradient(to right, rgba(31, 32, 33, 0.79), rgba(31, 32, 33, 0.79));
+        height: 250px;
+        text-transform: uppercase;
+        background: linear-gradient(to right, rgba(31, 32, 33, 0.95), rgba(31, 32, 33, 0.95));
     }
     .header__main__nav-link {
         width: 100%;
@@ -96,9 +219,11 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         line-height: 22px;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-right: unset;
-        padding: 10px 0 10px 0;
+        height: 60px;
     }
     .header-top__menu-img {
         display: unset;
@@ -157,4 +282,60 @@
         margin-bottom: 27px;
     }
     /* FOOTER */
+    .footer {
+        height: 600px;
+    }
+    .footer__main-block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .footer__left-block {
+        text-align: center;
+        margin: 50px 0 25px 0;
+    }
+    .footer__form_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__form_block input {
+        margin-bottom: 25px;
+    }
+    .footer__form_block a {
+        margin-left: unset;
+    }
+    .footer__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        flex: 2 50%;
+        align-items: center;
+    }
+    .footer__form span {
+        color: #ffff;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+    .footer__form span input {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
 }

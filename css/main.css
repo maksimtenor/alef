@@ -52,6 +52,7 @@ body, html{
     position: absolute;
     text-align: left;
     left: 17%;
+    z-index: 9999999999;
 }
 .header__main__nav-link {
     color: #fff;
@@ -162,7 +163,16 @@ body, html{
     justify-content: center;
     align-items: center;
     margin-bottom: 27px;
+    border-radius: 0 0 10px 10px;
 }
+.main__product-card-item:hover {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* .main__product-card-item:nth-last-child(-n+3){
+    margin-bottom: unset;
+} */
 .main__product-card-item__img-block{
     height: 264px;
     width: 100%;
@@ -197,12 +207,9 @@ body, html{
     color: rgb(255, 255, 255);
     transition: 0.3s;
 }
-/* .main__product-card-item__img-block--discount:nth-of-type(2),
-.main__product-card-item__img-block--discount:nth-of-type(3),
-.main__product-card-item__img-block--discount:nth-of-type(4),
-.main__product-card-item__img-block--discount:nth-of-type(6) {
+.hidden {
     display: none;
-} */
+}
 .main__product-card-item__img-block--discount {
     position: absolute;
     display: flex;
@@ -317,4 +324,169 @@ body, html{
     font-family: 'Montserrat'm sans-serif;
     text-align: left;
 }
+.main__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__footer_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 380px;
+    height: 65px;
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    margin: 41px 0 68px 0;
+}
+.main__footer_button:hover {
+    background-color: rgb(243, 243, 243);
+}
+
 /* FOOTER -------------------------------------------------*/
+.footer {
+    height: 312px;
+    width: 100%;
+    background-color: #1F2021;
+}
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+.footer__main-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+.footer__left-block {
+    text-align: left;
+}
+.footer__left-block h1{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffff;
+}
+.footer__left-block span{
+    display: inline-block;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ffff;
+    margin-top: 26px;
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 2 50%;
+}
+.footer__form_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer__form_block input{
+    width: 300px;
+    height: 65px;
+    outline: none;
+    padding: 0 33px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+}
+.footer__form_block a{
+    width: 250px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6EBBD3;
+    color: #ffff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-left: 16px;
+}
+.footer__form_block a:hover {
+    transition: 0.3s;
+    background-color: turquoise;
+}
+.footer__form span{
+    color: #ffff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.footer__form span input {
+    width: 18px;
+    height: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ANY CSS ----------------------------------------------- */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 7%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #6ebbd3a6; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 0; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    width: 59px;
+    height: 59px;
+}
+
+#myBtn:hover {
+    background-color: #5fa4b9; /* Add a dark-grey background on hover */
+    transition: 0.3s;
+}
+.myBtn--arrow-up::after {
+    display: inline-block;
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 18px;
+}

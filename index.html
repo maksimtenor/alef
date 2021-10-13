@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <div id="main" class="header">
             <div class="container">
                 <div class="header__main">
                     <img class="header-top__menu-img" src="img/list1.png">
@@ -34,9 +34,9 @@
                     </div>
                     <div class="header__main__nav">
                         <a href="#" class="header__main__nav-link">Main</a>
-                        <a href="#" class="header__main__nav-link">Gallery</a>
-                        <a href="#" class="header__main__nav-link">News</a>
-                        <a href="#" class="header__main__nav-link">Profile</a>
+                        <a href="#gallery" class="header__main__nav-link">Gallery</a>
+                        <a href="#news" class="header__main__nav-link">News</a>
+                        <a href="#profile" class="header__main__nav-link">Profile</a>
                     </div>
                     <div class="header__main__contact">
                         <a href="tel:+544 3490 00000" class="header__main__contact-tell">+544 3490 00000</a><br>
@@ -62,12 +62,13 @@
                         <span class="toggle-down refine-bar__sort--arrow-down"></span>
                     </div>
                 </div>
-                <div class="main__product-card">
+                <label for="product-card"></label>
+                <div id="gallery" class="main__product-card">
                     <div class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/1.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="discount hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -95,7 +96,7 @@
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/2.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -123,7 +124,7 @@
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/3.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -151,7 +152,7 @@
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/1.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -179,7 +180,7 @@
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/3.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="discount hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -207,7 +208,7 @@
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/2.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
-                            <span class="main__product-card-item__img-block--discount">
+                            <span class="hidden">
                                 <span>-40%</span>
                             </span>
                         </div>
@@ -232,15 +233,32 @@
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
                 </div>
-                <div class="main__footer"></div>
+                <div class="main__footer">
+                    <a href="#" class="main__footer_button">Показать еще &nbsp;<span class="main__footer_button--value">20</span></a>
+                </div>
             </div>
         </div>
 
-        <div class="footer">
+        <div id="profile" class="footer">
             <div class="container">
-
+                <div class="footer__main-block">
+                    <div class="footer__left-block">
+                        <h1>Успей купить!</h1>
+                        <span>Подпишись и успей <br>
+                            словить все акции</span>
+                    </div>
+                    <div class="footer__form">
+                        <div class="footer__form_block">
+                            <input type="text" placeholder="Email" maxlength="45">
+                            <a href="#" class="footer__form--button">Подписаться</a>
+                        </div>
+                        <span><input class="footer_form--radio" type="checkbox">&nbsp; Подписаться на новости</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <a href="#" id="myBtn" title="Go to top"><span class="myBtn--arrow-up"></span></a>
 </body>
 </html>
