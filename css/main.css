@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url(../fonts/Monstserrat/Montserrat-Regular.ttf);
+@import url(../fonts/Monstserrat/Montserrat-Medium.ttf);
+@import url(../fonts/Monstserrat/Montserrat-Bold.ttf);
 *{
     margin: 0;
     padding: 0;
@@ -52,6 +52,7 @@ body, html{
     position: absolute;
     text-align: left;
     left: 17%;
+    top: 8%;
     z-index: 9999999999;
 }
 .header__main__nav-link {
@@ -435,7 +436,7 @@ body, html{
     transition: 0.3s;
     background-color: turquoise;
 }
-.footer__form span{
+.footer__form label{
     color: #ffff;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -446,7 +447,7 @@ body, html{
     margin-top: 24px;
     cursor: pointer;
 }
-.footer__form span input {
+.footer__form label input {
     width: 18px;
     height: 18px;
     border: none;

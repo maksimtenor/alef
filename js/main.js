@@ -1,7 +1,7 @@
 // ПОКАЗАТЬ ИЛИ СКРЫТЬ МЕНЮ
 $(function(){
   $(".header-top__menu-img").click(function() {
-    $('.header__main__nav').toggle(300);
+    $('.header__main__nav').slideToggle(400);
   });
 });
 // СКРЫВАЕТ БЛОК ПРИ КЛИКЕ ВНЕ ЗОНЫ МЕНЮ ИЛИ БЛОКА header
@@ -60,6 +60,12 @@ function obnovitStranicu() {
       var top = $(id).offset().top; // получаем координаты блока
       $('body, html').animate({scrollTop: top}, 800); // плавно переходим к блоку
   });
+// Подсчет количества блоков "найдено котов"
+$(function() {
+  var elemCount = $('.main__product-card-item').length;
+  $('.header__cats-value').text('Найдено ' + elemCount + ' котов');
+  console.log(elemCount);
+})
 
 
 
