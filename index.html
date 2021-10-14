@@ -11,14 +11,15 @@
     <!-- Адаптивное отображение -->
     <link rel="stylesheet" href="css/adaptive.min.css">
 
+    <!-- FontAwesome-6 -->
+    <link rel="stylesheet" href="css/icons-fonts.min.css">
+
     <!-- Основной стрипт страницы -->
     <script defer src="js/main.min.js"></script>
 
     <!-- JQuery min Подключение через Локальный файл(для большей скорости) -->
     <script src="js/jquery.min.js"></script>
 
-    <!-- FONT AWESOME 5+ ПОдключение иконок -->
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -62,7 +63,7 @@
                 </div>
                 <label for="product-card"></label>
                 <div id="gallery" class="main__product-card">
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--1" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/1.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -72,10 +73,10 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Барсик</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
-                                        <p id="card-1--color">Коричневый</p>
+                                        <p id="card-1--color">Светло-коричневый</p>
                                         <p id="card-1--age">2 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
@@ -85,12 +86,12 @@
                                         <p>Кол-во лап</p>
                                     </div>
                                 </div>
-                                <h2 id="card-1--price">30 000 руб.</h2>
+                                <h2 id="card-1--price">12 000 руб.</h2>
                             </div>
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--2" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/2.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -100,11 +101,11 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Жожо</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
-                                        <p id="card-1--color">Коричневый</p>
-                                        <p id="card-1--age">2 мес.</p>
+                                        <p id="card-1--color">Светло-русый</p>
+                                        <p id="card-1--age">4 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
                                     <div class="card__options--bottom">
@@ -118,7 +119,7 @@
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--3" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/3.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -128,11 +129,11 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Стифф</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
-                                        <p id="card-1--color">Коричневый</p>
-                                        <p id="card-1--age">2 мес.</p>
+                                        <p id="card-1--color">Серый</p>
+                                        <p id="card-1--age">10 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
                                     <div class="card__options--bottom">
@@ -141,12 +142,12 @@
                                         <p>Кол-во лап</p>
                                     </div>
                                 </div>
-                                <h2 id="card-1--price">30 000 руб.</h2>
+                                <h2 id="card-1--price">5 700 руб.</h2>
                             </div>
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--4" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/1.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -156,11 +157,11 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Комерсант</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
                                         <p id="card-1--color">Коричневый</p>
-                                        <p id="card-1--age">2 мес.</p>
+                                        <p id="card-1--age">3 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
                                     <div class="card__options--bottom">
@@ -169,12 +170,12 @@
                                         <p>Кол-во лап</p>
                                     </div>
                                 </div>
-                                <h2 id="card-1--price">30 000 руб.</h2>
+                                <h2 id="card-1--price">22 300 руб.</h2>
                             </div>
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--5" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/3.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -184,11 +185,11 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Мурзик</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
-                                        <p id="card-1--color">Коричневый</p>
-                                        <p id="card-1--age">2 мес.</p>
+                                        <p id="card-1--color">Серый</p>
+                                        <p id="card-1--age">5 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
                                     <div class="card__options--bottom">
@@ -197,12 +198,12 @@
                                         <p>Кол-во лап</p>
                                     </div>
                                 </div>
-                                <h2 id="card-1--price">30 000 руб.</h2>
+                                <h2 id="card-1--price">3 500 руб.</h2>
                             </div>
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
                     </div>
-                    <div class="main__product-card-item">
+                    <div id="main__product-card-item--6" class="main__product-card-item">
                         <div class="main__product-card-item__img-block">
                             <img src="img/main/card-item/2.jpg">
                             <i class="fas fa-heart main__product-card-item__img-block--like"></i>
@@ -212,10 +213,10 @@
                         </div>
                         <div class="main__product-card-item__descr-block">
                             <div class="product-card-item__container">
-                                <h1 id="card-1--name">Кот полосатый</h1>
+                                <h1 id="card-1--name">Лелея</h1>
                                 <div class="main__product-card-item__descr-block__options">
                                     <div class="card__options--top">
-                                        <p id="card-1--color">Коричневый</p>
+                                        <p id="card-1--color">Рыжий</p>
                                         <p id="card-1--age">2 мес.</p>
                                         <p id="card-1--paws">4</p>
                                     </div>
@@ -225,7 +226,7 @@
                                         <p>Кол-во лап</p>
                                     </div>
                                 </div>
-                                <h2 id="card-1--price">30 000 руб.</h2>
+                                <h2 id="card-1--price">88 000 руб.</h2>
                             </div>
                         </div>
                         <a href="#" class="main__product-card-item__button-block">Купить</a>
@@ -250,7 +251,7 @@
                             <input type="text" placeholder="Email" maxlength="45">
                             <a href="#" class="footer__form--button">Подписаться</a>
                         </div>
-                        <label><input class="footer_form--radio" type="checkbox">&nbsp; Подписаться на новости</label>
+                        <label><input class="footer_form--radio" type="checkbox">&nbsp;<span> Подписаться на новости</span></label>
                     </div>
                 </div>
             </div>

@@ -64,10 +64,8 @@ function obnovitStranicu() {
 $(function() {
   var elemCount = $('.main__product-card-item').length;
   $('.header__cats-value').text('Найдено ' + elemCount + ' котов');
-  console.log(elemCount);
+  // console.log(elemCount);
 })
-
-
 
   // ПРОВЕРКА СКОЛЬКО ПРОСКРОЛИЛ ПОЛЬЗОВАТЕЛЬ
   //   window.onscroll = function (e) {
